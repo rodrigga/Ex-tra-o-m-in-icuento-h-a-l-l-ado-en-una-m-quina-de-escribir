@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones Centrados</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./img/lejano fondo.jfif');
+            background-size: cover;
+            background-position: center;
+            transition: background-size 5s ease-in-out;
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="acercarse()">Acercarse</button>
+        <button onclick="irse()">Irse</button>
+    </div>
+
+    <script>
+        function acercarse() {
+            document.body.style.transition = 'background-size 5s';
+            document.body.style.backgroundSize = '150%';
+            setTimeout(function() {
+                window.location.href = 'fdsj.html';
+            }, 5000);
+        }
+
+        function irse() {
+            alert('Irse');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./img/otra imagen.jfif');
+            background-size: cover;
+            background-position: center;
+            transition: background-size 5s ease-in-out;
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="noHacerNada()">No hacer nada</button>
+        <button onclick="escribir()">Escribir</button>
+    </div>
+
+    <script>
+        function noHacerNada() {
+            alert('No hacer nada');
+        }
+
+        function escribir() {
+            alert('Escribir');
+        }
+
+        document.body.style.backgroundSize = '150%';
+    </script>
+</body>
+</html>
