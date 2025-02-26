@@ -43,6 +43,13 @@
 
         function escribir() {
             alert('Escribir');
+            {
+            document.body.style.transition = 'background-size 2s';
+            document.body.style.backgroundSize = '150%';
+            setTimeout(function() {
+                window.location.href = 'Escribir.html';
+            }, 5000);
+        }
         }
         document.body.style.backgroundSize = '150%';
     </script>
